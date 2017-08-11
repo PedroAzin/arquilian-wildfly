@@ -20,7 +20,7 @@
     <!-- Configuration to be used when the WildFly managed profile is active -->
     <container qualifier="widlfly-managed" default="true">
         <configuration>
-            <property name="jbossHome">${jbossHome:target/wildfly-8.1.0.Final}</property>
+            <property name="jbossHome">target/wildfly-10.1.0.Final/</property>
         </configuration>
     </container>
 

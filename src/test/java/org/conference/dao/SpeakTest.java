@@ -1,6 +1,7 @@
 package org.conference.dao;
 
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 
 import org.conference.model.Speaker;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -26,6 +27,7 @@ public class SpeakTest {
 	SpeakerDao greeter;
 
 	@Test
+	@Transactional
 	public void should_create_greeting() {
 		
 		Speaker speaker = new Speaker();
