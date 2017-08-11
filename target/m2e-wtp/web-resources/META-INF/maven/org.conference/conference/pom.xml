@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.conference</groupId>
+	<artifactId>conference</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<build>
+		<finalName>conference</finalName>
+	</build>
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.jboss.arquillian.container/arquillian-weld-ee-embedded-1.1 -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.jboss.arquillian.container</groupId> -->
+		<!-- <artifactId>arquillian-weld-ee-embedded-1.1</artifactId> -->
+		<!-- <version>1.0.0.Final</version> -->
+		<!-- <scope>test</scope> -->
+		<!-- </dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld/weld-core -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.jboss.weld</groupId> -->
+		<!-- <artifactId>weld-core</artifactId> -->
+		<!-- <version>2.4.4.Final</version> -->
+		<!-- <scope>test</scope> -->
+		<!-- </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.glassfish.main.extras/glassfish-embedded-all -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.main.extras</groupId> -->
+<!-- 			<artifactId>glassfish-embedded-all</artifactId> -->
+<!-- 			<version>4.1.2</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.h2database</groupId> -->
+<!-- 			<artifactId>h2</artifactId> -->
+<!-- 			<version>1.4.196</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
+
+
+		<!-- https://mvnrepository.com/artifact/org.jboss.arquillian.container/arquillian-glassfish-embedded-3.1 -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.jboss.arquillian.container</groupId> -->
+<!-- 			<artifactId>arquillian-glassfish-embedded-3.1</artifactId> -->
+<!-- 			<version>1.0.1</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
+
+
+
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.arquillian</groupId>
+				<artifactId>arquillian-bom</artifactId>
+				<version>1.1.13.Final</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
